@@ -1,12 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DLG Ministry & Counseling</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #061524;
+      color: white;
+    }
+    .gold { color: #d99a2b; }
+    .hero {
+      padding: 50px 8%;
+      background: linear-gradient(135deg, #061524, #0b2238);
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+    h1 {
+      font-size: 54px;
+      line-height: 1.05;
+      margin: 20px 0;
+      font-family: Georgia, serif;
+    }
+    .logo {
+      font-size: 70px;
+      font-family: Georgia, serif;
+      color: #d99a2b;
+      font-weight: bold;
+    }
+    .subtitle { font-size: 20px; line-height: 1.6; }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .btn {
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid #d99a2b;
+      background: rgba(255,255,255,0.04);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn.goldbg {
+      background: #d99a2b;
+      color: #061524;
+    }
+    .phone {
+      background: #111;
+      border: 8px solid #222;
+      border-radius: 35px;
+      padding: 25px;
+      max-width: 310px;
+      margin: auto;
+      box-shadow: 0 0 30px rgba(217,154,43,.35);
+    }
+    .phone-screen {
+      background: white;
+      color: #111;
+      border-radius: 22px;
+      overflow: hidden;
+    }
+    .phone-top {
+      background: #061524;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+    .phone-hero {
+      background: linear-gradient(#123, #d99a2b);
+      padding: 35px 20px;
+      text-align: center;
+      color: white;
+    }
+    .services {
+      padding: 50px 8%;
+      background: #f7f7f7;
+      color: #111;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 30px;
+      font-family: Georgia, serif;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.12);
+      border-top: 5px solid #d99a2b;
+    }
+    .mission {
+      padding: 45px 8%;
+      background: #061524;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      border-top: 1px solid #d99a2b;
+      border-bottom: 1px solid #d99a2b;
+    }
+    .footer {
+      text-align: center;
+      padding: 40px 8%;
+      background: #030b13;
+    }
+    @media (max-width: 850px) {
+      .hero { grid-template-columns: 1fr; text-align: center; }
+      h1 { font-size: 40px; }
+      .buttons { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
-<body style="font-family: Arial; text-align:center; padding:40px;">
-  <h1>DLG Ministry & Counseling</h1>
-  <h2>Healing • Guidance • Restoration • Biblical Wisdom</h2>
-  <p>Faith-based counseling and ministry support.</p>
-  <p>Email: Preachboydlg@gmail.com</p>
+
+<body>
+
+  <section class="hero">
+    <div>
+      <div class="logo">DLG</div>
+      <h3 class="gold">MINISTRY & COUNSELING</h3>
+
+      <p class="gold">Jeremiah 29:11</p>
+      <p>“For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future.”</p>
+
+      <h1>Healing, Guidance, Restoration & Biblical Wisdom</h1>
+      <p class="subtitle">Faith-based counseling and ministry support for individuals, couples, and families.</p>
+
+      <div class="buttons">
+        <a class="btn" href="mailto:Preachboydlg@gmail.com">BOOK A SESSION<br><small>Get Counseling</small></a>
+        <a class="btn goldbg" href="mailto:Preachboydlg@gmail.com">PRAYER REQUEST<br><small>We’re Here to Pray</small></a>
+        <a class="btn" href="#services">COUNSELING SERVICES<br><small>View Support Options</small></a>
+        <a class="btn goldbg" href="#teachings">WATCH TEACHINGS<br><small>Sermons & Videos</small></a>
+      </div>
+    </div>
+
+    <div class="phone">
+      <div class="phone-screen">
+        <div class="phone-top">
+          <h2 class="gold">DLG</h2>
+          <p>Ministry & Counseling</p>
+        </div>
+        <div class="phone-hero">
+          <h2>You’re Not Alone.<br>We’re Here to Help.</h2>
+          <p>Faith. Healing. Restoration.</p>
+          <button style="background:#d99a2b;border:0;padding:12px 22px;border-radius:8px;font-weight:bold;">BOOK SESSION</button>
+        </div>
+        <div style="padding:20px;">
+          <h3>Our Services</h3>
+          <p>Marriage & Couples Counseling</p>
+          <p>Individual Counseling</p>
+          <p>Father Wound Healing</p>
+          <p>Biblical Counseling</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission">
+    <div>
+      <h2 class="gold">Our Mission</h2>
+      <p>To provide biblically based counseling, spiritual guidance, and practical tools that bring healing, restoration, and purpose through Jesus Christ.</p>
+    </div>
+    <div>
+      <h2>Faith-Based.<br>Christ-Centered.<br>People-Focused.</h2>
+    </div>
+    <div>
+      <h2 class="gold">Overseer Derrick L. Green</h2>
+      <p>Founder</p>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2 class="section-title">Counseling Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Marriage & Couples Counseling</h3>
+        <p>Strengthen communication, rebuild trust, and create a Christ-centered relationship.</p>
+      </div>
+      <div class="card">
+        <h3>Individual Counseling</h3>
+        <p>Receive support for life’s challenges, emotional healing, and personal growth.</p>
+      </div>
+      <div class="card">
+        <h3>Father Wound Healing</h3>
+        <p>Healing from rejection, hurt, and broken relationships through biblical guidance.</p>
+      </div>
+      <div class="card">
+        <h3>Grief & Loss Support</h3>
+        <p>Biblical support to help you navigate loss, healing, and restoration.</p>
+      </div>
+      <div class="card">
+        <h3>Biblical Counseling</h3>
+        <p>Christ-centered guidance rooted in God’s Word.</p>
+      </div>
+      <div class="card">
+        <h3>Spiritual Guidance</h3>
+        <p>Grow in your faith and discover God’s purpose for your life.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission" id="teachings">
+    <div>
+      <h2 class="gold">Biblical Teachings</h2>
+      <p>Sermons, devotionals, livestreams, Bible studies, and ministry encouragement.</p>
+    </div>
+    <div>
+      <h2 class="gold">Prayer Requests</h2>
+      <p>Submit a prayer request and our ministry will stand with you in faith.</p>
+    </div>
+    <div>
+      <h2 class="gold">Donations</h2>
+      <p>Support the ministry and help us continue serving individuals, couples, families, and communities.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h2 class="gold">DLG Ministry & Counseling</h2>
+    <p>Healing • Guidance • Restoration • Biblical Wisdom</p>
+    <p>Email: <a style="color:#d99a2b;" href="mailto:Preachboydlg@gmail.com">Preachboydlg@gmail.com</a></p>
+    <p>© 2026 DLG Ministry & Counseling</p>
+  </footer>
+
 </body>
 </html>
