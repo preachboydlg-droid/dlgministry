@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DLG Ministry & Counseling</title>
+  <meta name="theme-color" content="#081a33" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="DLG Ministry" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <div class="logo">DLG</div>
+      <div class="nav-links">
+        <a href="#services">Counseling</a>
+        <a href="#booking">Book</a>
+        <a href="#prayer">Prayer</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Ministry • Counseling • Restoration</p>
+      <h1>DLG Ministry & Counseling</h1>
+      <p class="subtitle">Faith-based guidance for healing, wisdom, marriage, family, and spiritual restoration.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#booking">Book a Session</a>
+        <a class="btn secondary" href="#prayer">Submit Prayer Request</a>
+        <button id="installButton" class="btn install" hidden type="button">Install App</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome</h2>
+      <p>DLG Ministry & Counseling provides biblical counseling, spiritual mentorship, marriage support, and compassionate guidance for individuals, couples, and families.</p>
+    </section>
+
+    <section id="services" class="cards-section">
+      <h2>Counseling Services</h2>
+      <div class="cards">
+        <div class="card"><h3>Marriage & Couples</h3><p>Faith-centered tools for communication, forgiveness, trust, and rebuilding love.</p></div>
+        <div class="card"><h3>Biblical Counseling</h3><p>Scripture-based support for life decisions, emotional healing, and spiritual growth.</p></div>
+        <div class="card"><h3>Family Healing</h3><p>Guidance for father wounds, grief, rejection, trauma, and restoration.</p></div>
+      </div>
+    </section>
+
+    <section id="booking" class="form-section">
+      <h2>Book a Counseling Session</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <select required>
+          <option value="">Select Service</option>
+          <option>Marriage Counseling</option>
+          <option>Biblical Counseling</option>
+          <option>Family Healing</option>
+          <option>Spiritual Mentorship</option>
+        </select>
+        <textarea placeholder="Briefly describe what you need help with"></textarea>
+        <button type="submit">Request Appointment</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="prayer" class="form-section light">
+      <h2>Prayer Request</h2>
+      <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Email Address" />
+        <textarea placeholder="Enter your prayer request"></textarea>
+        <button type="submit">Submit Prayer Request</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="media">
+      <h2>Teachings & Encouragement</h2>
+      <p>Add sermon videos, devotionals, Bible studies, livestreams, and music ministry here.</p>
+      <a class="btn primary" href="#contact">Contact Ministry</a>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>DLG Ministry & Counseling</h2>
+    <p>Healing • Guidance • Restoration • Biblical Wisdom</p>
+    <p>Email: connect@dlgministry.org</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
